@@ -16,7 +16,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BASE_DIR="${SCRIPT_DIR}"
 DATESTAMP=$(date +"%Y%m%d")
-TARGET_DIR="${BASE_DIR}/${DATESTAMP}"
+TARGET_DIR="${BASE_DIR}/patentsview_${DATESTAMP}"
 LATEST_LINK="${BASE_DIR}/latest"
 
 GRANTED_PAGE="https://patentsview.org/download/data-download-tables"
